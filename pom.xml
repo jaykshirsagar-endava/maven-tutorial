@@ -7,10 +7,20 @@
     <groupId>com.jetbrains.marco</groupId>
     <artifactId>maven-tutorial</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Test multi module</name>
+
+    <modules>
+        <module>simple-command</module>
+        <module>simple-model</module>
+        <module>simple-weather</module>
+        <module>simple-persist</module>
+        <module>simple-webapp</module>
+    </modules>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
         <junit.version>5.8.2</junit.version>
     </properties>
